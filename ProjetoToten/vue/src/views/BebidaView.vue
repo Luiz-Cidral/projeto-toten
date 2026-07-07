@@ -3,12 +3,12 @@
 <script setup>
 import { reactive } from "vue";
 import { useRouter } from "vue-router"; 
-import { usePedidoStore } from "../stores/pedido"; // Importa o Pinia gerenciador de estado
+import { usePedidoStore } from "../stores/pedido"; 
 
 const router = useRouter(); 
 const pedidoStore = usePedidoStore();
 
-// Lista de bebidas igual à que você tinha estruturado
+
 const bebidas = reactive([
   { id: 1, title: "coca-cola", description: "Refrigerante Sabor Cola", image: "refrigerante.png", price: 6.00 },
   { id: 2, title: "suco", description: "Suco de Laranja", image: "suco.png", price: 7.50 },
@@ -38,7 +38,6 @@ function escolherBebida(bebida) {
     <section class="white-itens">
       <div class="container-itens">
         <div v-for="bebida in bebidas" :key="bebida.id" class="card-item">
-          <!-- Certifique-se que suas imagens de bebida estão em public/img/ -->
           <img :src="`/img/${bebida.image}`" :alt="bebida.description" class="img-produto">
           
           <h3>{{ bebida.description }}</h3>
