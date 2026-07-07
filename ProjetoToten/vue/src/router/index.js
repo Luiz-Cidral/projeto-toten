@@ -6,7 +6,7 @@ import SuccessView from '@/views/SuccessView.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
