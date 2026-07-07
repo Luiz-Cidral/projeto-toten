@@ -1,0 +1,210 @@
+/* ---------- GERAL ---------- */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6efe6;
+}
+
+/* ---------- MENU ---------- */
+
+header{
+    background: #7d1616;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+
+nav li{
+    margin: 0 45px;
+    
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    
+
+}
+
+.atual a{
+    color: #ffd54f;
+    border-bottom: 3px solid #ffd54f;
+    padding-bottom: 5px;
+
+}
+
+/* ---------- BANNER ---------- */
+
+.banner{
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.banner h1{
+    font-size: 60px;
+    color: #5d0d0d;
+}
+
+.banner span{
+    display: block;
+    color: #a31818;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 24px;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* ---------- PRODUTOS ---------- */
+
+.white-itens{
+    width: 90%;
+    margin: auto;
+}
+
+.white-itens ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    list-style:none;
+
+    flex-wrap:wrap;
+
+    padding:0;
+
+}
+
+/* ---------- CARD ---------- */
+
+.white-itens li{
+
+    background:white;
+
+    width:250px;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.white-itens li:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ---------- IMAGEM FICTÍCIA ---------- */
+
+.white-itens li::before{
+
+   
+
+    display:block;
+
+    font-size:90px;
+
+    margin-bottom:15px;
+
+}
+
+/* ---------- NOME ---------- */
+
+.white-itens p{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+/* ---------- BOTÃO ---------- */
+
+button{
+
+    background:#8b1616;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#b71c1c;
+
+}
+
+/* ---------- SELECT ---------- */
+
+select{
+
+    width:500px;
+
+    padding:20px;
+
+    font-size:22px;
+
+    border-radius:10px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media(max-width:900px){
+
+    .banner h1{
+
+        font-size:40px;
+
+    }
+
+    .banner span{
+
+        font-size:55px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+    }
+
+}
